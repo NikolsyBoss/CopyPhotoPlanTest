@@ -1,4 +1,4 @@
-package com.test.copyphotoplantest
+package com.test.copyphotoplantest.objectClass
 
 class Place {
     lateinit var namePlace: String

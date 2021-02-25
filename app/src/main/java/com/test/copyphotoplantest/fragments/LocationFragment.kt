@@ -15,8 +15,8 @@ import androidx.navigation.Navigation.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.test.copyphotoplantest.Folders
-import com.test.copyphotoplantest.Place
+import com.test.copyphotoplantest.objectClass.Folders
+import com.test.copyphotoplantest.objectClass.Place
 import com.test.copyphotoplantest.R
 
 class LocationFragment : Fragment() {

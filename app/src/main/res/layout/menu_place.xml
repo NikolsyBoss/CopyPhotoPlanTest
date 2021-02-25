@@ -8,7 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
@@ -47,7 +48,8 @@
                     android:layout_marginTop="14dp"
                     android:fontFamily="@font/ubuntu"
                     android:text="TextView"
-                    android:textSize="16sp"
+                    android:textColor="#869495"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.009"
                     app:layout_constraintStart_toStartOf="parent"
