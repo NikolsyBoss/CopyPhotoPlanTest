@@ -15,8 +15,8 @@ import androidx.navigation.Navigation.findNavController
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.test.copyphotoplantest.objectClass.Folders
-import com.test.copyphotoplantest.objectClass.Place
+import com.test.copyphotoplantest.objects.Folders
+import com.test.copyphotoplantest.objects.Place
 import com.test.copyphotoplantest.R
 
 class LocationFragment : Fragment() {
@@ -100,10 +100,11 @@ class LocationFragment : Fragment() {
                             val buttonDelete = linearChangeName.findViewById<Button>(R.id.delet_folder)
                             buttonDelete.setOnClickListener {
                                 val collectionFolders = firestore.collection("folders")
-                                firestore.collection("folders").document(document.id).collection("places").get().addOnSuccessListener { documentss ->
+                                firestore.collection("folders").document(document.id)
+                                        .collection("places").get().addOnSuccessListener { documentsPlace ->
                                     val fireStorage = FirebaseStorage.getInstance()
-                                    for (document1 in documentss){
-                                        val obj1 = document1.toObject(Place::class.java)
+                                    for (documentPlace in documentsPlace){
+                                        val obj1 = documentPlace.toObject(Place::class.java)
 
                                         obj1.linksPhoto.forEach {
                                             val photoRef: StorageReference = fireStorage.getReferenceFromUrl(it)
@@ -112,7 +113,8 @@ class LocationFragment : Fragment() {
 
                                             }
                                         }
-                                        collectionFolders.document(document.id).collection("places").document(document1.id).delete().addOnSuccessListener {
+                                        collectionFolders.document(document.id).collection("places")
+                                                .document(documentPlace.id).delete().addOnSuccessListener {
                                             collectionFolders.document(document.id).delete().addOnSuccessListener {
                                                 updateInterface()
                                             }

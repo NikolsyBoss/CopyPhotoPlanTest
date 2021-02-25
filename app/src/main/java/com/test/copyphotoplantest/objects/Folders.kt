@@ -1,4 +1,4 @@
-package com.test.copyphotoplantest.objectClass
+package com.test.copyphotoplantest.objects
 
 public class Folders{
     var gravity: Float = 0.0f

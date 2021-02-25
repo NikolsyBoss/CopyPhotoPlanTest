@@ -22,7 +22,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.squareup.picasso.Picasso
-import com.test.copyphotoplantest.objectClass.Place
+import com.test.copyphotoplantest.objects.Place
 import com.test.copyphotoplantest.R
 import java.io.ByteArrayOutputStream
 import kotlin.collections.ArrayList
@@ -149,7 +149,9 @@ class OpenedFolderLocationFragment : Fragment() {
                             }
                             val buttonDelete = linearChangeName.findViewById<Button>(R.id.delet_folder)
                             buttonDelete.setOnClickListener {
-                                val collectionFolders = firestore.collection("folders").document(requireArguments().getString("idDocument")!!).collection("places")
+                                val collectionFolders = firestore.collection("folders")
+                                        .document(requireArguments().getString("idDocument")!!)
+                                        .collection("places")
                                 collectionFolders.document(document.id).delete().addOnSuccessListener {
                                     updateInterface()
                                 }
