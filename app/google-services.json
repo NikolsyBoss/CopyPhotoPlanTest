@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "799351485921",
+    "firebase_url": "https://copyphotoplantest-default-rtdb.firebaseio.com",
+    "project_id": "copyphotoplantest",
+    "storage_bucket": "copyphotoplantest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799351485921:android:3ed3e875f38f7b07cd4ea0",
+        "android_client_info": {
+          "package_name": "com.test.copyphotoplantest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799351485921-l9nk4kis6nc4677of1io3j72rqnmvrp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQAnSMwjYr79UgCtHgO9yugsiSbBpx_lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799351485921-l9nk4kis6nc4677of1io3j72rqnmvrp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

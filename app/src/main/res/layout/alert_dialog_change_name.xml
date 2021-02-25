@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_alertdialog"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_alertdialog"
+        android:backgroundTint="#EDF3F4"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu"
+        android:inputType="text"
+        android:padding="15dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/delet_folder"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_alertdialog"
+            android:backgroundTint="#F44336"
+            android:text="Удалить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/save_new_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_alertdialog"
+            android:backgroundTint="#AEF33C"
+            android:text="Сохранить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/close_dialog"
+            app:layout_constraintStart_toEndOf="@+id/delet_folder"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/close_dialog"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_alertdialog"
+            android:backgroundTint="#EEEBE6"
+            android:foregroundGravity="clip_vertical|right"
+            android:text="Отмена"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

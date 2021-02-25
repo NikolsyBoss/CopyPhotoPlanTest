@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/button_open_folder"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_button_with_shadow"
+        android:fontFamily="@font/ubuntu"
+        android:paddingBottom="5dp"
+        android:shadowColor="@color/black"
+        android:text="Ватутина"
+        android:textAllCaps="false"
+        android:textColor="#624E3E"
+        android:textSize="20sp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
